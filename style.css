@@ -343,7 +343,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px 36px;
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .about-inner {
     grid-template-columns: 1fr;
   }
@@ -365,6 +365,7 @@ body {
   gap: 6px;
 }
 .about-row {
+  min-width: 0;
   display: flex;
   gap: 10px;
   font-size: 12px;
