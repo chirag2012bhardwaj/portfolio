@@ -97,3 +97,14 @@ function checkReveal() {
 }
 window.addEventListener("scroll", checkReveal, { passive: true });
 checkReveal();
+/* ── VIEW NAVIGATION ── */
+function openView(id) {
+  document.getElementById('home-view').style.display = 'none';
+  document.getElementById(id).style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function closeView(id) {
+  document.getElementById(id).style.display = 'none';
+  document.getElementById('home-view').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

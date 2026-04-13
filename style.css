@@ -978,3 +978,102 @@ body {
     padding: 28px 16px 52px;
   }
 }
+/* ── PORTAL CARDS ── */
+.portal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 520px) {
+  .portal-row { grid-template-columns: 1fr; }
+}
+.portal-card {
+  border: 1px solid;
+  padding: 28px 22px 24px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s;
+  user-select: none;
+}
+.portal-label {
+  font-family: "VT323", monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -9px; left: 14px;
+  background: var(--bg);
+  padding: 0 7px;
+}
+.pc-amber { border-color: var(--amber-border); background: var(--amber-faint); }
+.pc-amber .portal-label { color: var(--amber); }
+.pc-amber:hover {
+  border-color: var(--amber-dim);
+  box-shadow: 0 0 30px rgba(255,176,0,0.13);
+  transform: translateY(-2px);
+}
+.pc-red { border-color: var(--red-border); background: var(--red-faint); }
+.pc-red .portal-label { color: var(--red); }
+.pc-red:hover {
+  border-color: var(--red-dim);
+  box-shadow: 0 0 30px rgba(255,60,60,0.13);
+  transform: translateY(-2px);
+}
+.portal-title {
+  font-family: "VT323", monospace;
+  font-size: 34px;
+  letter-spacing: 4px;
+  margin-bottom: 6px;
+}
+.pc-amber .portal-title { color: var(--amber); text-shadow: 0 0 16px rgba(255,176,0,0.5); }
+.pc-red   .portal-title { color: var(--red);   text-shadow: 0 0 16px rgba(255,60,60,0.5); }
+.portal-sub {
+  font-size: 11px;
+  color: var(--dimmer);
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+.portal-hint {
+  font-family: "VT323", monospace;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.22s, transform 0.22s;
+}
+.pc-amber .portal-hint { color: var(--amber); }
+.pc-red   .portal-hint { color: var(--red); }
+.portal-card:hover .portal-hint { opacity: 1; transform: translateX(0); }
+
+/* ── SUBPAGE HEADER ── */
+.subpage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(57,255,20,0.1);
+}
+.back-btn {
+  font-family: "VT323", monospace;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: var(--green);
+  background: none;
+  border: 1px solid var(--green-border);
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.back-btn:hover {
+  border-color: var(--green-dim);
+  background: var(--green-faint);
+  box-shadow: 0 0 14px rgba(57,255,20,0.12);
+}
+.subpage-breadcrumb {
+  font-family: "VT323", monospace;
+  font-size: 15px;
+  color: var(--dimmer);
+  letter-spacing: 2px;
+}
