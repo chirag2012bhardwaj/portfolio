@@ -329,6 +329,7 @@ body {
   padding: 22px 24px 20px;
   position: relative;
   box-shadow: 0 0 28px rgba(255, 60, 60, 0.05);
+  overflow: hidden;
 }
 .about-strip .section-label {
   color: var(--red);
@@ -380,6 +381,10 @@ body {
 }
 .about-val {
   color: var(--dim);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
+  flex: 1;
 }
 
 /* =====================================================
