@@ -38,7 +38,7 @@ body {
   background: var(--bg);
   color: var(--white);
   font-family: "Space Mono", monospace;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.85;
   min-height: 100vh;
   overflow-x: hidden;
@@ -525,7 +525,7 @@ body {
 }
 
 .skill-item {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--dim);
   padding: 3px 0;
   display: flex;
@@ -684,7 +684,7 @@ body {
   margin-bottom: 10px;
 }
 .exp-body {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--dim);
   line-height: 1.85;
   flex: 1;
@@ -820,7 +820,7 @@ body {
   text-shadow: 0 0 10px rgba(255, 176, 0, 0.3);
 }
 .proj-body {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--dim);
   line-height: 1.85;
   margin-bottom: 8px;
